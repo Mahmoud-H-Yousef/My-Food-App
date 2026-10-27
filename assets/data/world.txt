@@ -1,0 +1,287 @@
+# key^name_en^name_ar^aliases^category^kcal^protein^carbs^fat^fiber^portions(en|ar|grams;...)
+# Values are per 100 g; dishes are estimates from typical home recipes.
+# --- Basics: grains, bread, staples ---
+rice_white^White rice, cooked^أرز أبيض مطبوخ^rice roz ruz رز^basics^130^2.7^28^0.3^0.4^1 cup|كوب|160;1 plate|طبق|250;1 tbsp|ملعقة كبيرة|15
+rice_egy^Egyptian rice with vermicelli^أرز بالشعرية^roz bel shaarya rice vermicelli^basics^165^3^29^4^0.6^1 cup|كوب|160;1 plate|طبق|250
+rice_basmati^Basmati rice, cooked^أرز بسمتي مطبوخ^basmati^basics^121^3.5^25^0.4^0.4^1 cup|كوب|160;1 plate|طبق|250
+rice_brown^Brown rice, cooked^أرز بني مطبوخ^brown rice^basics^112^2.3^23.5^0.8^1.8^1 cup|كوب|195
+pasta^Pasta, cooked^مكرونة مسلوقة^macaroni spaghetti makarona^basics^158^5.8^31^0.9^1.8^1 cup|كوب|140;1 plate|طبق|250
+bulgur^Bulgur, cooked^برغل مطبوخ^burghul borghol^basics^83^3.1^18.6^0.2^4.5^1 cup|كوب|180
+freekeh^Freekeh, cooked^فريكة مطبوخة^freekeh frike^basics^120^4.5^24^0.8^4^1 cup|كوب|170
+couscous^Couscous, cooked^كسكسي مطبوخ^kuskus^basics^112^3.8^23^0.2^1.4^1 cup|كوب|157
+oats^Oats, dry^شوفان^oatmeal quaker^basics^379^13^68^6.5^10^1/2 cup|نصف كوب|40;1 tbsp|ملعقة كبيرة|8
+oatmeal_milk^Oatmeal with milk^شوفان بالحليب^porridge^breakfast^110^4.5^15^3.5^1.6^1 bowl|طبق|250
+potato_boiled^Potato, boiled^بطاطس مسلوقة^batates potato^basics^87^1.9^20^0.1^1.8^1 medium|حبة متوسطة|150
+potato_fries^French fries^بطاطس محمرة^chips fries batates mehammara^fastfood^312^3.4^41^15^3.8^Small portion|صغير|80;Medium portion|وسط|117;Large portion|كبير|154
+sweet_potato^Sweet potato, baked^بطاطا حلوة مشوية^batata^basics^90^2^21^0.2^3.3^1 medium|حبة متوسطة|130
+bread_baladi^Egyptian baladi bread^عيش بلدي^aish baladi eish^bread^250^9^50^1.5^6^1 loaf|رغيف|100;1/2 loaf|نصف رغيف|50
+bread_pita^Pita / Arabic bread^خبز عربي^khubz pita shami aish shami^bread^275^9^55^1.2^2.2^1 loaf|رغيف|60;1 large loaf|رغيف كبير|90
+bread_white^White bread (toast)^خبز توست أبيض^toast fino^bread^265^9^49^3.2^2.7^1 slice|شريحة|25
+bread_brown^Whole wheat bread^خبز أسمر^brown bread toast^bread^247^13^41^3.4^7^1 slice|شريحة|30
+bread_fino^Fino bread roll^عيش فينو^fino roll^bread^290^9^55^3.5^2.4^1 roll|رغيف|50
+bread_saj^Saj / markook bread^خبز صاج^markook shrak^bread^270^9^56^1^2^1 loaf|رغيف|50
+bread_tannour^Tannour bread^خبز تنور^tanoor^bread^270^9^55^1.5^2.5^1 loaf|رغيف|120
+baguette^Baguette^باجيت^french bread^bread^270^11^52^2^2.5^1 slice|شريحة|30;1/2 baguette|نصف باجيت|125
+tortilla^Flour tortilla^تورتيلا^wrap^bread^310^8^52^8^3^1 tortilla|رغيف|45
+naan^Naan^خبز نان^nan^bread^290^9^50^5.5^2^1 piece|قطعة|90
+croissant^Croissant^كرواسون^croissant^bread^406^8^46^21^2.6^1 piece|قطعة|60
+crackers^Crackers^بسكويت مالح^biscuits saltines^snacks^420^9^72^10^3^5 crackers|5 قطع|15
+corn_flakes^Corn flakes^كورن فليكس^cereal^breakfast^357^7.5^84^0.4^3.3^1 cup|كوب|28
+# --- Eggs, dairy ---
+egg_boiled^Egg, boiled^بيض مسلوق^egg beid bayd^dairy^155^13^1.1^11^0^1 egg|بيضة|50;2 eggs|بيضتان|100
+egg_fried^Egg, fried^بيض مقلي^fried egg beid ma2li^dairy^196^13.6^0.8^15^0^1 egg|بيضة|46;2 eggs|بيضتان|92
+omelette^Omelette^أومليت^omelet eggah^dairy^154^10.6^0.6^12^0^2-egg omelette|بيضتان|120
+shakshuka^Shakshuka^شكشوكة^shakshouka eggs tomato^breakfast^110^6.5^5^7^1.3^1 plate|طبق|250
+milk_full^Milk, full fat^حليب كامل الدسم^laban milk^dairy^61^3.2^4.8^3.3^0^1 cup|كوب|245;1 glass|كوب كبير|300
+milk_low^Milk, low fat^حليب قليل الدسم^skimmed milk^dairy^42^3.4^5^1^0^1 cup|كوب|245
+yogurt^Yogurt, plain^زبادي^zabadi laban yogurt^dairy^61^3.5^4.7^3.3^0^1 cup|علبة|170;1 tbsp|ملعقة كبيرة|15
+greek_yogurt^Greek yogurt, plain^زبادي يوناني^greek^dairy^97^9^4^5^0^1 cup|علبة|170
+laban_drink^Laban / ayran drink^لبن عيران^ayran laban rayeb^drinks^37^1.7^2.6^2^0^1 cup|كوب|245
+labneh^Labneh^لبنة^labna^dairy^180^6^5^15^0^1 tbsp|ملعقة كبيرة|20;1 serving|حصة|50
+cheese_white^White cheese (feta-like)^جبنة بيضاء^gebna beda feta domiati istanbuli^dairy^264^14^4^21^0^1 slice|شريحة|30;1 serving|حصة|50
+cheese_roumi^Roumy cheese^جبنة رومي^roumi^dairy^390^25^2^31^0^1 slice|شريحة|25
+cheese_cheddar^Cheddar cheese^جبنة شيدر^cheddar^dairy^403^25^1.3^33^0^1 slice|شريحة|21
+cheese_mozz^Mozzarella cheese^جبنة موتزاريلا^mozzarella^dairy^300^22^2.2^22^0^1 slice|شريحة|28;1/4 cup|ربع كوب|28
+cheese_triangle^Cheese triangle (spread)^جبنة مثلثات^la vache qui rit cheese spread^dairy^245^10^6^20^0^1 triangle|مثلث|17
+cheese_halloumi^Halloumi, grilled^حلوم مشوي^halloumi^dairy^320^22^2^25^0^1 slice|شريحة|30
+cheese_akkawi^Akkawi cheese^جبنة عكاوي^akawi^dairy^290^18^2^24^0^1 slice|شريحة|30
+cheese_cream^Cream cheese^جبنة كريمي^philadelphia^dairy^342^6^4^34^0^1 tbsp|ملعقة كبيرة|15
+butter^Butter^زبدة^zebda^dairy^717^0.9^0.1^81^0^1 tbsp|ملعقة كبيرة|14;1 tsp|ملعقة صغيرة|5
+ghee^Ghee^سمن بلدي^samna ghee semn^basics^900^0^0^100^0^1 tbsp|ملعقة كبيرة|13;1 tsp|ملعقة صغيرة|4
+cream^Cooking cream^كريمة طبخ^cream eshta^dairy^195^2.5^3.5^19^0^1 tbsp|ملعقة كبيرة|15
+qishta^Qishta / clotted cream^قشطة^eshta ashta^dairy^240^4^5^22^0^1 tbsp|ملعقة كبيرة|20
+# --- Oils, sauces, condiments ---
+oil_olive^Olive oil^زيت زيتون^zeit zaitoon^basics^884^0^0^100^0^1 tbsp|ملعقة كبيرة|13.5;1 tsp|ملعقة صغيرة|4.5
+oil_veg^Vegetable oil^زيت نباتي^oil zeit corn sunflower^basics^884^0^0^100^0^1 tbsp|ملعقة كبيرة|13.6;1 tsp|ملعقة صغيرة|4.5;1 cup|كوب|218
+tahini^Tahini^طحينة^tahina sesame paste^basics^595^17^21^54^9^1 tbsp|ملعقة كبيرة|15
+tahini_salad^Tahini sauce (prepared)^سلطة طحينة^tahina salad^arab^230^6^8^20^2.5^1 tbsp|ملعقة كبيرة|20;1 serving|حصة|60
+mayonnaise^Mayonnaise^مايونيز^mayo^basics^680^1^0.6^75^0^1 tbsp|ملعقة كبيرة|14
+ketchup^Ketchup^كاتشب^catsup^basics^101^1^27^0.1^0.3^1 tbsp|ملعقة كبيرة|17
+garlic_sauce^Garlic sauce (toum)^ثومية^toum toom garlic dip^arab^540^1^6^57^0.5^1 tbsp|ملعقة كبيرة|15
+tomato_sauce^Tomato sauce^صلصة طماطم^salsa tomato paste sauce^basics^29^1.3^6^0.2^1.5^1 tbsp|ملعقة كبيرة|16;1 cup|كوب|245
+tomato_paste^Tomato paste^معجون طماطم^paste salsa^basics^82^4.3^19^0.5^4^1 tbsp|ملعقة كبيرة|16
+sugar^Sugar^سكر^sukkar^basics^387^0^100^0^0^1 tsp|ملعقة صغيرة|4;1 tbsp|ملعقة كبيرة|12.5;1 cup|كوب|200
+honey^Honey^عسل نحل^asal^basics^304^0.3^82^0^0.2^1 tbsp|ملعقة كبيرة|21;1 tsp|ملعقة صغيرة|7
+molasses^Molasses (black honey)^عسل أسود^asal eswed^basics^290^0^75^0.1^0^1 tbsp|ملعقة كبيرة|20
+jam^Jam^مربى^mrabba jam^basics^278^0.4^69^0.1^1^1 tbsp|ملعقة كبيرة|20
+nutella^Chocolate hazelnut spread^نوتيلا^nutella^sweets^539^6.3^57^31^3.4^1 tbsp|ملعقة كبيرة|19
+peanut_butter^Peanut butter^زبدة فول سوداني^peanut^basics^588^25^20^50^6^1 tbsp|ملعقة كبيرة|16
+flour^Wheat flour^دقيق^de2ee flour taheen^basics^364^10^76^1^2.7^1 cup|كوب|125;1 tbsp|ملعقة كبيرة|8
+# --- Legumes ---
+foul^Ful medames^فول مدمس^foul fool ful medames^arab^110^7.5^16^2^5.5^1 plate|طبق|200;1 ladle|مغرفة|150;1 sandwich filling|حشوة ساندويتش|80
+foul_oil^Ful with oil^فول بالزيت^foul bel zeit^arab^150^7.5^16^6.5^5.5^1 plate|طبق|200;1 sandwich filling|حشوة ساندويتش|80
+taameya^Ta'meya / falafel^طعمية فلافل^taamia falafel felafel^arab^333^13^32^18^5^1 piece|قرص|17;5 pieces|5 أقراص|85
+hummus^Hummus^حمص بالطحينة^hommos humus^arab^177^8^14^10^6^1 tbsp|ملعقة كبيرة|15;1 plate|طبق|150
+lentils^Lentils, cooked^عدس مطبوخ^ads lentils^basics^116^9^20^0.4^7.9^1 cup|كوب|200
+lentil_soup^Lentil soup^شوربة عدس^shorbet ads^arab^70^4^10^1.8^2.5^1 bowl|طبق|300;1 ladle|مغرفة|150
+chickpeas^Chickpeas, cooked^حمص حب مسلوق^homos chickpeas^basics^164^9^27^2.6^7.6^1 cup|كوب|164
+beans_white^White beans stew^فاصوليا بيضاء بالصلصة^fasolia beda^arab^105^5.5^15^2.5^5^1 plate|طبق|250;1 ladle|مغرفة|150
+kidney_beans^Kidney beans, cooked^فاصوليا حمراء^red beans^basics^127^8.7^23^0.5^6.4^1 cup|كوب|177
+# --- Meat, poultry, fish ---
+chicken_breast^Chicken breast, grilled^صدر دجاج مشوي^frakh chicken breast^meat^165^31^0^3.6^0^1 breast|صدر|170;100 g|100 جم|100
+chicken_thigh^Chicken thigh, roasted^ورك دجاج مشوي^chicken leg^meat^209^26^0^10.9^0^1 thigh|ورك|115
+chicken_grilled_q^Grilled chicken (quarter)^ربع فرخة مشوية^farkha mashweya grilled chicken^meat^215^27^0^11.5^0^1 quarter (meat)|ربع (لحم)|200;1/2 chicken (meat)|نص فرخة (لحم)|400
+chicken_fried^Fried chicken^دجاج مقلي^broasted fried chicken kfc^fastfood^260^23^9^15^0.4^1 piece|قطعة|120
+chicken_pane^Chicken pane (breaded)^بانيه^pane schnitzel^meat^240^20^12^12^0.6^1 piece|قطعة|100
+beef_lean^Beef, lean, cooked^لحم بقري مطبوخ^lahma meat beef^meat^217^26^0^12^0^100 g|100 جم|100;1 piece|قطعة|85
+lamb^Lamb, cooked^لحم ضاني مطبوخ^dani lamb mutton^meat^258^25^0^17^0^100 g|100 جم|100;1 piece|قطعة|85
+minced_beef^Minced beef, cooked^لحم مفروم مطبوخ^mafroom ground beef^meat^250^26^0^16^0^100 g|100 جم|100;1/2 cup|نصف كوب|75
+kofta^Kofta, grilled^كفتة مشوية^kofta kufta^arab^280^19^4^21^0.5^1 skewer|سيخ|60;1 portion|حصة|200
+kebab^Kebab (grilled lamb/beef)^كباب^kabab tikka^arab^240^24^1^15^0^1 skewer|سيخ|80;1 portion|حصة|200
+liver^Liver, fried (Alexandrian)^كبدة إسكندراني^kebda liver^arab^200^24^5^9^0.4^1 sandwich filling|حشوة ساندويتش|80;1 plate|طبق|200
+burger_patty^Burger patty, cooked^برجر لحم^beef burger patty^meat^270^24^0^19^0^1 patty|قطعة|90
+sausage^Sausage^سجق^sogo2 sausage^meat^300^12^2^27^0^1 piece|قطعة|50
+hot_dog^Hot dog sausage^هوت دوج^hotdog^meat^290^10^4^26^0^1 sausage|قطعة|45
+luncheon^Luncheon meat / turkey slices^لانشون^luncheon mortadella turkey^meat^180^12^4^13^0^1 slice|شريحة|20
+basterma^Basterma^بسطرمة^pastirma^meat^250^30^3^13^0^1 slice|شريحة|10
+tuna^Tuna, canned in oil, drained^تونة^tuna^meat^198^29^0^8^0^1 can|علبة|120;1 tbsp|ملعقة كبيرة|15
+fish_grilled^Fish, grilled^سمك مشوي^samak fish bolti^meat^130^24^0^3.5^0^1 fish|سمكة|250;100 g|100 جم|100
+fish_fried^Fish, fried^سمك مقلي^samak ma2li^meat^230^20^8^13^0.4^1 fish|سمكة|200;100 g|100 جم|100
+shrimp^Shrimp, cooked^جمبري^gambari shrimp^meat^99^24^0.2^0.3^0^100 g|100 جم|100
+salmon^Salmon, baked^سلمون^salmon^meat^206^22^0^12^0^1 fillet|فيليه|150
+sardines^Sardines^سردين^sardin^meat^208^25^0^11^0^1 can|علبة|90
+# --- Arab dishes ---
+koshari^Koshari^كشري^koshary kushari^arab^170^5^32^3^3^Small box|علبة صغيرة|300;Medium box|علبة وسط|450;Large box|علبة كبيرة|600
+mahshi_cabbage^Mahshi (stuffed cabbage)^محشي كرنب^mahshy cabbage^arab^150^3^24^5^2^1 roll|صباع|25;1 plate|طبق|250
+mahshi_vine^Stuffed vine leaves^محشي ورق عنب^warak enab dolma yalanji^arab^160^3^22^7^3^1 piece|صباع|15;1 plate|طبق|200
+mahshi_mix^Mahshi (peppers, zucchini, eggplant)^محشي مشكل^mahshy^arab^140^3^21^5^2.5^1 piece|حبة|120;1 plate|طبق|250
+molokhia^Molokhia^ملوخية^mulukhiyah molokheya^arab^50^3.5^4^2.5^2^1 bowl|طبق|250;1 ladle|مغرفة|150
+okra_stew^Okra stew (bamia)^بامية باللحمة^bamya bamia^arab^95^6^7^5^3^1 plate|طبق|250;1 ladle|مغرفة|150
+peas_stew^Peas and carrots stew^بسلة بالجزر^besella^arab^90^5^9^4^3.5^1 plate|طبق|250;1 ladle|مغرفة|150
+green_beans_stew^Green beans stew^فاصوليا خضراء^fasolia khadra^arab^75^4^7^3.5^2.8^1 plate|طبق|250;1 ladle|مغرفة|150
+potato_stew^Potato stew with meat^بطاطس باللحمة^batates bel lahma^arab^110^5.5^11^5^1.5^1 plate|طبق|250;1 ladle|مغرفة|150
+moussaka_egy^Egyptian moussaka (eggplant)^مسقعة^mesa2a3a moussaka^arab^120^2^10^8^3^1 plate|طبق|250
+fattah^Fattah^فتة^fatta^arab^210^10^24^8^1^1 plate|طبق|350
+fatteh_hummus^Fatteh with hummus^فتة حمص^fatteh^arab^190^7^22^8^4^1 plate|طبق|300
+kabsa^Kabsa (rice with chicken)^كبسة^kabsah machboos majboos^arab^175^9^20^6^1^1 plate|طبق|400
+mandi^Mandi^مندي^mandi^arab^180^10^20^6.5^0.8^1 plate|طبق|450
+mansaf^Mansaf^منسف^mansaf^arab^210^11^20^9^0.6^1 plate|طبق|450
+maqluba^Maqluba^مقلوبة^maqlouba makloubeh^arab^170^7^21^6.5^1.8^1 plate|طبق|350
+musakhan^Musakhan^مسخن^msakhan^arab^260^12^22^14^2^1 roll|رول|120;1 piece|قطعة|250
+mujaddara^Mujaddara^مجدرة^mjadara megadara^arab^170^6^26^4.5^4^1 plate|طبق|300
+freekeh_chicken^Freekeh with chicken^فريكة بالدجاج^frikeh^arab^165^10^20^5^3^1 plate|طبق|350
+biryani^Biryani^برياني^biryani^indian^180^8^22^6.5^1^1 plate|طبق|400
+shawarma_chicken^Chicken shawarma sandwich^ساندويتش شاورما دجاج^shawerma chawarma^arab^230^13^22^10^1.5^1 sandwich|ساندويتش|250;1 large sandwich|ساندويتش كبير|350
+shawarma_meat^Meat shawarma sandwich^ساندويتش شاورما لحم^shawerma lahma^arab^250^14^21^12^1.5^1 sandwich|ساندويتش|250
+shawarma_plate^Shawarma plate^طبق شاورما^shawarma platter^arab^210^13^18^10^1.5^1 plate|طبق|450
+hawawshi^Hawawshi^حواوشي^hawawshy^arab^290^13^24^16^1.5^1 loaf|رغيف|250
+feteer^Feteer meshaltet^فطير مشلتت^feteer fiteer^arab^420^7^45^24^1.5^1 slice|قطعة|100;1 whole|فطيرة كاملة|500
+manakish_zaatar^Manakish zaatar^مناقيش زعتر^manaeesh zaatar^arab^330^7^42^15^4^1 piece|قطعة|120
+manakish_cheese^Manakish with cheese^مناقيش جبنة^manaeesh jebne^arab^310^12^35^14^2^1 piece|قطعة|150
+fatayer_spinach^Spinach fatayer^فطاير سبانخ^fatayer sabanekh^arab^240^6^32^10^3^1 piece|قطعة|60
+sambousek^Sambousek, fried^سمبوسك^sambusa samosa^arab^310^9^28^18^2^1 piece|قطعة|40
+kibbeh^Kibbeh, fried^كبة مقلية^kebbeh kubba^arab^260^12^22^14^3^1 piece|قطعة|60
+kibbeh_baked^Kibbeh, baked^كبة بالصينية^kibbeh bil sanieh^arab^220^13^20^10^3.5^1 piece|قطعة|150
+tabbouleh^Tabbouleh^تبولة^tabouli^arab^120^2.5^12^7.5^3^1 bowl|طبق|150
+fattoush^Fattoush^فتوش^fatoush^arab^110^2^11^6.5^2.5^1 bowl|طبق|200
+baba_ghanoush^Baba ghanoush^بابا غنوج^baba ghanouj mutabal^arab^130^3^9^9.5^4^1 tbsp|ملعقة كبيرة|20;1 plate|طبق|150
+salad_green^Green salad (no dressing)^سلطة خضراء^salata khadra^veg^20^1^4^0.2^1.6^1 plate|طبق|150
+salad_arab^Arabic salad with oil^سلطة بلدي بالزيت^salata balady^arab^65^1^5^4.8^1.5^1 plate|طبق|150
+torli^Mixed vegetables in oven (torli)^تورلي^turli^arab^85^2^9^5^2.5^1 plate|طبق|250
+sayadeya^Sayadeya (fish with rice)^صيادية^sayadiyah^arab^170^10^21^5^1^1 plate|طبق|400
+mombar^Mombar^ممبار^mumbar^arab^260^8^25^14^1^1 piece|صباع|50
+kaware^Cow trotters soup (kawareh)^كوارع^kaware^arab^120^12^1^8^0^1 bowl|طبق|300
+chicken_soup^Chicken soup^شوربة دجاج^shorbet frakh^arab^40^4^2.5^1.5^0.2^1 bowl|طبق|300
+orzo_soup^Orzo soup (lesan asfour)^شوربة لسان عصفور^lesan asfour^arab^60^2.5^9^1.5^0.4^1 bowl|طبق|300
+macarona_bechamel^Macaroni bechamel^مكرونة بشاميل^bashamel^arab^210^9^19^11^1^1 piece|قطعة|250
+roqaq^Roqaq with meat^رقاق باللحمة^ro2a2^arab^300^10^28^16^1^1 piece|قطعة|200
+falafel_sandwich^Falafel sandwich^ساندويتش طعمية^taameya sandwich^arab^260^8^34^10^5^1 sandwich|ساندويتش|180
+foul_sandwich^Ful sandwich^ساندويتش فول^foul sandwich^arab^200^8^33^4^6^1 sandwich|ساندويتش|180
+egg_sandwich^Egg sandwich^ساندويتش بيض^bed sandwich^arab^220^9^27^8^2.5^1 sandwich|ساندويتش|170
+potato_sandwich^Fries sandwich^ساندويتش بطاطس^batates sandwich^arab^280^5^40^11^3^1 sandwich|ساندويتش|180
+arayes^Arayes^عرايس^arais^arab^290^14^22^16^2^1 piece|قطعة|120
+# --- International dishes ---
+pizza_margherita^Pizza margherita^بيتزا مارجريتا^pizza^intl^250^11^31^9^2^1 slice|شريحة|110;Medium pizza|بيتزا وسط|700
+pizza_pepperoni^Pizza pepperoni^بيتزا بيبروني^pizza^intl^280^12^30^12^2^1 slice|شريحة|115
+pizza_chicken^Chicken pizza^بيتزا دجاج^chicken ranch pizza^intl^255^13^29^9.5^1.8^1 slice|شريحة|115
+burger^Beef burger sandwich^ساندويتش برجر^hamburger^fastfood^260^13^24^12^1.4^1 burger|برجر|220
+cheeseburger^Cheeseburger^تشيز برجر^cheese burger^fastfood^270^14^24^13^1.3^1 burger|برجر|230
+chicken_burger^Crispy chicken burger^برجر دجاج كريسبي^zinger chicken sandwich^fastfood^255^12^26^12^1.5^1 burger|برجر|220
+nuggets^Chicken nuggets^ناجتس^nuggets^fastfood^296^15^17^18^1^6 pieces|6 قطع|100
+hotdog_sandwich^Hot dog sandwich^ساندويتش هوت دوج^hotdog^fastfood^270^10^24^15^1^1 sandwich|ساندويتش|100
+spaghetti_bolognese^Spaghetti bolognese^سباجيتي بولونيز^bolognese^intl^150^7^20^4.5^2^1 plate|طبق|350
+pasta_alfredo^Fettuccine alfredo^فيتوتشيني ألفريدو^alfredo^intl^200^7^21^10^1^1 plate|طبق|350
+pasta_white_sauce_chicken^Pasta with chicken and white sauce^مكرونة بالدجاج والصوص الأبيض^creamy pasta^intl^180^10^19^7^1^1 plate|طبق|350
+lasagna^Lasagna^لازانيا^lazanya^intl^165^9^14^8^1.2^1 piece|قطعة|250
+caesar_salad^Caesar salad with chicken^سلطة سيزر بالدجاج^caesar^intl^130^10^6^7.5^1.5^1 bowl|طبق|300
+club_sandwich^Club sandwich^كلوب ساندويتش^club^intl^240^13^20^12^1.5^1 sandwich|ساندويتش|250
+sushi^Sushi roll^سوشي^maki california roll^asian^150^5^28^2.5^1^1 piece|قطعة|30;8 pieces|8 قطع|240
+fried_rice^Fried rice^أرز مقلي^chinese rice^asian^165^4.5^24^6^1^1 plate|طبق|300
+noodles_stirfry^Stir-fried noodles^نودلز مقلية^chow mein lo mein^asian^175^6^26^5.5^2^1 plate|طبق|300
+instant_noodles^Instant noodles (prepared)^إندومي^indomie ramen noodles^asian^140^3^19^5.5^1^1 pack|كيس|300
+sweet_sour_chicken^Sweet and sour chicken^دجاج حلو وحامض^sweet sour^asian^220^11^25^8^0.8^1 plate|طبق|300
+chicken_curry^Chicken curry^كاري دجاج^curry^indian^150^12^5^9^1.2^1 plate|طبق|300
+butter_chicken^Butter chicken^دجاج بالزبدة^murgh makhani^indian^170^13^6^10.5^1^1 plate|طبق|300
+dal^Dal (lentil curry)^دال^daal^indian^120^6^16^3.5^4^1 bowl|طبق|250
+samosa^Samosa^سمبوسة هندية^samosa^indian^260^5^30^13^2.5^1 piece|قطعة|60
+tacos^Beef taco^تاكو^taco^intl^220^10^18^12^2.5^1 taco|تاكو|100
+burrito^Chicken burrito^بوريتو^burrito^intl^200^10^24^7^3^1 burrito|بوريتو|300
+quesadilla^Chicken quesadilla^كاساديا^quesadilla^intl^280^15^24^14^1.5^1 quesadilla|قطعة|180
+steak_fries^Steak with fries^ستيك مع بطاطس^steak^intl^230^16^14^12.5^1.5^1 plate|طبق|400
+mashed_potato^Mashed potato^بطاطس مهروسة^pure mash^basics^110^2^16^4^1.5^1 cup|كوب|210
+pancakes^Pancakes^بان كيك^pancake^breakfast^227^6^28^10^1^1 pancake|قطعة|50;3 pancakes|3 قطع|150
+waffle^Waffle^وافل^waffles^breakfast^290^8^33^14^1^1 waffle|قطعة|75
+french_toast^French toast^خبز فرنسي محمص^french toast^breakfast^230^8^25^11^1^1 slice|شريحة|65
+granola^Granola^جرانولا^granola^breakfast^470^10^64^20^7^1/2 cup|نصف كوب|60
+# --- Vegetables ---
+tomato^Tomato^طماطم^tamatem banadora^veg^18^0.9^3.9^0.2^1.2^1 medium|حبة متوسطة|120
+cucumber^Cucumber^خيار^kheyar^veg^15^0.7^3.6^0.1^0.5^1 medium|حبة متوسطة|200
+lettuce^Lettuce^خس^khas^veg^15^1.4^2.9^0.2^1.3^1 cup|كوب|50
+onion^Onion^بصل^basal^veg^40^1.1^9.3^0.1^1.7^1 medium|حبة متوسطة|110
+garlic^Garlic^ثوم^toom^veg^149^6.4^33^0.5^2.1^1 clove|فص|3
+carrot^Carrot^جزر^gazar^veg^41^0.9^9.6^0.2^2.8^1 medium|حبة متوسطة|60
+pepper^Bell pepper^فلفل رومي^felfel^veg^26^1^6^0.3^2.1^1 medium|حبة متوسطة|120
+eggplant^Eggplant^باذنجان^betengan^veg^25^1^6^0.2^3^1 medium|حبة متوسطة|300
+eggplant_fried^Eggplant, fried^باذنجان مقلي^betengan ma2li^veg^180^1.5^9^16^3^1 slice|شريحة|30
+zucchini^Zucchini^كوسة^kousa^veg^17^1.2^3.1^0.3^1^1 medium|حبة متوسطة|200
+spinach^Spinach^سبانخ^sabanekh^veg^23^2.9^3.6^0.4^2.2^1 cup|كوب|30
+cabbage^Cabbage^كرنب^koronb malfouf^veg^25^1.3^5.8^0.1^2.5^1 cup|كوب|90
+cauliflower^Cauliflower^قرنبيط^arnabeet^veg^25^1.9^5^0.3^2^1 cup|كوب|100
+broccoli^Broccoli^بروكلي^brokoli^veg^34^2.8^6.6^0.4^2.6^1 cup|كوب|90
+okra^Okra^بامية^bamya^veg^33^1.9^7.5^0.2^3.2^1 cup|كوب|100
+peas^Green peas^بسلة^besela^veg^81^5.4^14.5^0.4^5.1^1 cup|كوب|145
+corn^Sweet corn^ذرة^dora corn^veg^86^3.3^19^1.4^2.7^1 cob|كوز|100;1 cup|كوب|150
+mushroom^Mushrooms^مشروم^fetr^veg^22^3.1^3.3^0.3^1^1 cup|كوب|70
+pickles^Pickles^مخلل^mekhalel torshi^veg^12^0.5^2.3^0.2^1.2^1 serving|حصة|30
+olives^Olives^زيتون^zaitoon^veg^145^1^3.8^15^3.3^5 olives|5 حبات|20
+avocado^Avocado^أفوكادو^avocado^fruit^160^2^8.5^14.7^6.7^1/2 avocado|نصف حبة|100
+# --- Fruit ---
+apple^Apple^تفاح^tofah^fruit^52^0.3^14^0.2^2.4^1 medium|حبة متوسطة|180
+banana^Banana^موز^mooz^fruit^89^1.1^23^0.3^2.6^1 medium|حبة متوسطة|118
+orange^Orange^برتقال^bortoan^fruit^47^0.9^12^0.1^2.4^1 medium|حبة متوسطة|130
+mandarin^Mandarin / tangerine^يوسفي^yousefy clementine^fruit^53^0.8^13^0.3^1.8^1 medium|حبة|75
+grapes^Grapes^عنب^enab^fruit^69^0.7^18^0.2^0.9^1 cup|كوب|150
+dates^Dates^تمر^tamr balah^fruit^282^2.5^75^0.4^8^1 date|تمرة|8;3 dates|3 تمرات|24
+watermelon^Watermelon^بطيخ^bate5^fruit^30^0.6^7.6^0.2^0.4^1 slice|شريحة|280;1 cup|كوب|150
+melon^Cantaloupe^شمام^kantalop^fruit^34^0.8^8^0.2^0.9^1 cup|كوب|160
+mango^Mango^مانجو^manga^fruit^60^0.8^15^0.4^1.6^1 medium|حبة|200
+strawberry^Strawberries^فراولة^farawla^fruit^32^0.7^7.7^0.3^2^1 cup|كوب|150
+guava^Guava^جوافة^gawafa^fruit^68^2.6^14^1^5.4^1 medium|حبة|90
+pomegranate^Pomegranate^رمان^roman^fruit^83^1.7^19^1.2^4^1 cup seeds|كوب حبوب|175
+figs^Figs, fresh^تين^teen^fruit^74^0.8^19^0.3^2.9^1 fig|حبة|50
+peach^Peach^خوخ^khokh^fruit^39^0.9^9.5^0.3^1.5^1 medium|حبة|150
+apricot^Apricot^مشمش^mesh mesh^fruit^48^1.4^11^0.4^2^1 apricot|حبة|35
+pear^Pear^كمثرى^kommetra^fruit^57^0.4^15^0.1^3.1^1 medium|حبة|180
+kiwi^Kiwi^كيوي^kiwi^fruit^61^1.1^15^0.5^3^1 kiwi|حبة|75
+pineapple^Pineapple^أناناس^ananas^fruit^50^0.5^13^0.1^1.4^1 cup|كوب|165
+dried_apricot^Dried apricots (qamar el din)^مشمش مجفف^qamar el din^fruit^241^3.4^63^0.5^7.3^5 pieces|5 حبات|35
+raisins^Raisins^زبيب^zebib^fruit^299^3.1^79^0.5^3.7^1 tbsp|ملعقة كبيرة|10
+# --- Nuts, snacks ---
+almonds^Almonds^لوز^loz^snacks^579^21^22^50^12.5^1 handful|حفنة|28
+peanuts^Peanuts^فول سوداني^sudani^snacks^567^26^16^49^8.5^1 handful|حفنة|28
+walnuts^Walnuts^عين جمل^ein gamal walnut^snacks^654^15^14^65^6.7^1 handful|حفنة|28
+cashews^Cashews^كاجو^kaju^snacks^553^18^30^44^3.3^1 handful|حفنة|28
+pistachios^Pistachios^فستق^fosto2 pistachio^snacks^560^20^28^45^10^1 handful|حفنة|28
+sunflower_seeds^Sunflower seeds^لب سوري^lib^snacks^584^21^20^51^8.6^1 handful|حفنة|30
+chips^Potato chips^شيبسي^chipsy crisps^snacks^536^7^53^35^4.4^Small bag|كيس صغير|25;Large bag|كيس كبير|80
+popcorn^Popcorn^فشار^fishar^snacks^387^13^78^4.5^15^1 cup|كوب|8
+biscuits^Plain biscuits^بسكويت^biscuit cookies^snacks^450^7^70^16^2^1 piece|قطعة|10
+chocolate_milk^Milk chocolate^شوكولاتة بالحليب^chocolate^sweets^535^7.7^59^30^3.4^1 bar|قطعة|45;1 square|مربع|7
+chocolate_dark^Dark chocolate^شوكولاتة داكنة^dark chocolate^sweets^546^5^61^31^7^1 square|مربع|10
+wafer^Chocolate wafer bar^ويفر شوكولاتة^wafer kitkat^sweets^520^6^62^27^2^1 bar|قطعة|40
+protein_bar^Protein bar^بروتين بار^protein bar^snacks^380^30^38^12^5^1 bar|قطعة|60
+# --- Sweets ---
+basbousa^Basbousa^بسبوسة^basbusa harissa namoura^sweets^380^5^55^15^1^1 piece|قطعة|80
+konafa^Konafa^كنافة^kunafa knafeh^sweets^400^7^45^22^1^1 piece|قطعة|120
+baklava^Baklava^بقلاوة^baklawa^sweets^430^6^50^24^2^1 piece|قطعة|35
+qatayef^Qatayef, fried with nuts^قطايف^atayef^sweets^330^6^43^15^1.5^1 piece|قطعة|60
+luqaimat^Luqaimat / zalabya^لقيمات زلابية^zalabia awameh^sweets^380^4^52^17^1^5 pieces|5 قطع|60
+om_ali^Om Ali^أم علي^umm ali^sweets^260^6^28^14^1^1 bowl|طبق|200
+rice_pudding^Rice pudding^أرز باللبن^roz bel laban^sweets^130^3.5^21^3.5^0.2^1 cup|كوب|200
+mahalabia^Mahalabia^مهلبية^muhallebi^sweets^120^3.5^19^3.5^0^1 cup|كوب|180
+ghorayeba^Ghorayeba^غريبة^ghraybeh^sweets^500^6^56^28^1.5^1 piece|قطعة|20
+kahk^Kahk (eid cookies)^كحك^ka3k^sweets^480^6^58^25^1.5^1 piece|قطعة|35
+maamoul^Maamoul with dates^معمول^mamoul^sweets^430^5^62^19^3^1 piece|قطعة|40
+halawa^Halawa (halva)^حلاوة طحينية^halva halawa^sweets^516^12^60^27^4^1 tbsp|ملعقة كبيرة|25;1 serving|حصة|50
+cake^Sponge cake^كيك^cake^sweets^350^6^55^12^1^1 slice|شريحة|80
+choc_cake^Chocolate cake^كيك شوكولاتة^chocolate cake^sweets^370^5^53^16^2.5^1 slice|شريحة|100
+cheesecake^Cheesecake^تشيز كيك^cheese cake^sweets^321^5.5^26^22^0.4^1 slice|شريحة|110
+donut^Donut, glazed^دونات^doughnut^sweets^420^5^50^22^1.4^1 donut|قطعة|60
+ice_cream^Ice cream^آيس كريم^ice cream gelato^sweets^207^3.5^24^11^0.7^1 scoop|بولة|65;1 cup|كوب|130
+cookies_choc^Chocolate chip cookie^كوكيز^cookies^490^5^64^24^2^1 cookie|قطعة|30
+# --- Drinks ---
+water^Water^مياه^water maya^drinks^0^0^0^0^0^1 glass|كوب|250
+tea_plain^Tea (no sugar)^شاي بدون سكر^shay chai^drinks^1^0^0.3^0^0^1 cup|كوب|240
+tea_sugar^Tea with 2 tsp sugar^شاي بمعلقتين سكر^shay chai sugar^drinks^14^0^3.5^0^0^1 cup|كوب|240
+tea_milk^Tea with milk and sugar^شاي بلبن^shay bel laban karak^drinks^45^1.5^7^1.2^0^1 cup|كوب|240
+coffee_black^Coffee, black^قهوة سادة^ahwa coffee americano^drinks^1^0.1^0^0^0^1 cup|كوب|240
+coffee_turkish^Turkish coffee (medium sugar)^قهوة تركي مظبوط^ahwa turki^drinks^40^0.2^9^0.2^0^1 cup|فنجان|60
+arabic_coffee^Arabic coffee (gahwa)^قهوة عربية^gahwa qahwa^drinks^2^0.1^0.3^0^0^1 cup|فنجان|50
+cappuccino^Cappuccino^كابتشينو^cappuccino^drinks^40^2^3.5^2^0^1 cup|كوب|240
+latte^Latte^لاتيه^cafe latte^drinks^54^3^4.5^2.8^0^1 cup|كوب|300
+nescafe^Instant coffee with milk and sugar^نسكافيه بالحليب^nescafe^drinks^60^2.5^9^1.5^0^1 cup|كوب|240
+orange_juice^Orange juice^عصير برتقال^aseer bortoan^drinks^45^0.7^10.4^0.2^0.2^1 glass|كوب|250
+mango_juice^Mango juice^عصير مانجو^aseer manga^drinks^55^0.3^14^0.1^0.5^1 glass|كوب|250
+sugarcane^Sugarcane juice^عصير قصب^asab^drinks^75^0^19^0^0^1 glass|كوب|300
+lemon_juice^Lemonade^عصير ليمون^limonada lemon mint^drinks^40^0.1^10.5^0^0^1 glass|كوب|250
+sobia^Sobia^سوبيا^sobya^drinks^90^1^18^1.5^0^1 glass|كوب|250
+qamar_drink^Qamar el din drink^عصير قمر الدين^amar eldin^drinks^65^0.6^16^0.1^1^1 glass|كوب|250
+tamarind^Tamarind drink^تمر هندي^tamr hendi^drinks^60^0.2^15^0^0.3^1 glass|كوب|250
+karkade^Hibiscus drink, sweetened^كركديه^karkadeh hibiscus^drinks^40^0^10^0^0^1 glass|كوب|250
+soda^Soft drink (cola)^مشروب غازي^pepsi cola soda^drinks^42^0^10.6^0^0^1 can|علبة|330;1 bottle|زجاجة|500
+soda_diet^Diet soft drink^مشروب غازي دايت^diet coke zero^drinks^1^0^0^0^0^1 can|علبة|330
+energy_drink^Energy drink^مشروب طاقة^red bull^drinks^45^0^11^0^0^1 can|علبة|250
+smoothie^Fruit smoothie^سموذي فواكه^smoothie^drinks^60^1^14^0.3^1.2^1 glass|كوب|300
+milkshake^Milkshake^ميلك شيك^milk shake^drinks^120^3.5^18^3.8^0.2^1 glass|كوب|350
+sahlab^Sahlab^سحلب^salep sahlab^drinks^100^3^16^3^0^1 cup|كوب|250
+protein_shake^Protein shake (with water)^بروتين شيك^whey^drinks^40^8^1.5^0.4^0^1 scoop shake|سكوب|300
