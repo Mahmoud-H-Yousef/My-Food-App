@@ -6,6 +6,7 @@ import '../../data/repo.dart';
 import '../../l10n/strings.dart';
 import '../../state/app_state.dart';
 import '../common.dart';
+import '../food/ai_sheet.dart';
 import '../food/amount_sheet.dart';
 import '../food/food_search_page.dart';
 import '../theme.dart';
@@ -62,6 +63,16 @@ class _RecipeEditorPageState extends State<RecipeEditorPage> {
           unit: picked.unit,
           n: picked.nutrition,
         )));
+  }
+
+  Future<void> _importWithAi() async {
+    final items = await runAi(context, recipe: true);
+    if (items == null || !mounted) return;
+    setState(() {
+      for (final it in items) {
+        _ingredients.add(Ingredient(foodId: it.match?.id, name: it.match?.name(lang(context)) ?? it.name, grams: it.grams, qty: it.grams, n: it.nutrition));
+      }
+    });
   }
 
   Future<void> _editIngredient(int i) async {
@@ -156,7 +167,10 @@ class _RecipeEditorPageState extends State<RecipeEditorPage> {
           Expanded(child: Text(context.tr('step1Ingredients'), style: tt.titleMedium)),
           FilledButton.tonalIcon(onPressed: _addIngredient, icon: const Icon(Icons.add), label: Text(context.tr('add'))),
         ]),
-        const SizedBox(height: 4),
+        Align(
+          alignment: AlignmentDirectional.centerStart,
+          child: TextButton.icon(onPressed: _importWithAi, icon: const Icon(Icons.auto_awesome, size: 18), label: Text(context.tr('aiPasteRecipe'))),
+        ),
         if (_ingredients.isEmpty)
           Padding(padding: const EdgeInsets.symmetric(vertical: 12), child: Text(context.tr('ingredientsHint'), style: TextStyle(color: cs.onSurfaceVariant))),
         for (var i = 0; i < _ingredients.length; i++)

@@ -9,6 +9,7 @@ import '../../l10n/strings.dart';
 import '../../state/app_state.dart';
 import '../common.dart';
 import '../theme.dart';
+import 'ai_sheet.dart';
 import 'amount_sheet.dart';
 import 'barcode_page.dart';
 import 'food_editor_page.dart';
@@ -161,6 +162,21 @@ class _FoodSearchPageState extends State<FoodSearchPage> with SingleTickerProvid
             Expanded(child: OutlinedButton.icon(onPressed: _createFood, icon: const Icon(Icons.add), label: Text(context.tr('createFood')))),
           ]),
         ),
+        if (!widget.pickOnly)
+          Padding(
+            padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+            child: SizedBox(
+              width: double.infinity,
+              child: FilledButton.tonalIcon(
+                onPressed: () async {
+                  final logged = await aiLog(context, widget.meal);
+                  if (logged && context.mounted) Navigator.pop(context);
+                },
+                icon: const Icon(Icons.auto_awesome),
+                label: Text(context.tr('aiButton')),
+              ),
+            ),
+          ),
         Expanded(
           child: searching
               ? _list(_results!, empty: context.tr('noResults'))

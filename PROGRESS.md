@@ -10,7 +10,7 @@ Each stage gets an APK in `APKs/` and a git tag:
 |---|---|---|---|
 | v1 | My Food v1.apk | v1 | Food DB (USDA + world dishes, EN/AR), onboarding + goals, daily log, quick add, copy day, water, weight + charts, My Pot recipes, custom foods |
 | v2 | My Food v2.apk | v2 | Barcode (Open Food Facts), meal planner, shopping list, what-can-I-cook, Health Connect, Google Drive backup, export/import file |
-| v3 | My Food v3.apk | v3 | Gemma on-device AI (text + photo), optional Gemini key, Ramadan mode |
+| v3 | My Food v3.apk | v3 | On-device AI with Gemma 4 E2B (text, photo, paste recipe), optional Gemini key, Ramadan mode. Needs Android 11+ |
 | final | My Food.apk | final | Polish |
 
 ## Data
@@ -21,5 +21,5 @@ Each stage gets an APK in `APKs/` and a git tag:
 ## Status
 - [x] v1
 - [x] v2
-- [ ] v3
+- [x] v3
 - [ ] final

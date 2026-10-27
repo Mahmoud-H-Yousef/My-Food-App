@@ -62,6 +62,13 @@ class SettingsPage extends StatelessWidget {
               value: app.imperial,
               onChanged: (v) => app.imperial = v,
             ),
+            SwitchListTile(
+              secondary: const Icon(Icons.nights_stay_outlined),
+              title: Text(context.tr('ramadanMode')),
+              subtitle: Text(context.tr('ramadanModeSub')),
+              value: app.ramadan,
+              onChanged: (v) => app.ramadan = v,
+            ),
             ListTile(
               leading: const Icon(Icons.local_drink_outlined),
               title: Text(context.tr('glassSizeSetting')),
@@ -124,10 +131,10 @@ class SettingsPage extends StatelessWidget {
   }
 }
 
-const appVersion = '2.0';
+const appVersion = '3.0';
 
 /// Sections added in later versions.
-List<Widget> extraSettingsSections(BuildContext context) => const [HealthSection(), BackupSection()];
+List<Widget> extraSettingsSections(BuildContext context) => const [HealthSection(), AiSection(), BackupSection()];
 
 /// Edit body details and goal; recalculates targets.
 class ProfileEditPage extends StatefulWidget {

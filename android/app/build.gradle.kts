@@ -24,8 +24,8 @@ android {
 
     defaultConfig {
         applicationId = "com.mahmoud.myfood"
-        // Health Connect needs Android 8 (API 26) or newer.
-        minSdk = 26
+        // On-device AI (LiteRT) needs Android 11 (API 30) or newer.
+        minSdk = 30
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName

@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 
 import '../../l10n/strings.dart';
 import '../../logic/profile.dart';
+import '../../services/ai.dart';
 import '../../services/backup.dart';
 import '../../services/health_sync.dart';
 import '../../state/app_state.dart';
@@ -239,5 +240,109 @@ class _BackupSectionState extends State<BackupSection> {
         ]),
       ),
     ]);
+  }
+}
+
+/// On-device Gemma model and the optional Gemini key.
+class AiSection extends StatelessWidget {
+  const AiSection({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final app = context.watch<AppState>();
+    return ChangeNotifierProvider.value(
+      value: Ai.instance,
+      child: Consumer<Ai>(builder: (context, ai, _) {
+        final key = app.getString('geminiKey');
+        return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+          settingsHeader(context, context.tr('aiSection')),
+          Card(
+            clipBehavior: Clip.antiAlias,
+            child: Column(children: [
+              if (!ai.deviceSupported)
+                ListTile(
+                  leading: const Icon(Icons.phone_android),
+                  title: Text(context.tr('gemmaModel')),
+                  subtitle: Text(context.tr('gemmaUnsupported')),
+                )
+              else
+                FutureBuilder<bool>(
+                  future: ai.modelInstalled(),
+                  builder: (context, snap) {
+                    final installed = snap.data ?? false;
+                    final p = ai.downloadProgress;
+                    return Column(children: [
+                      ListTile(
+                        leading: const Icon(Icons.memory),
+                        title: Text(context.tr('gemmaModel')),
+                        subtitle: Text(p != null
+                            ? context.tr('gemmaDownloading', {'n': '$p'})
+                            : installed
+                                ? context.tr('gemmaReady')
+                                : context.tr('gemmaNotDownloaded', {'size': Ai.modelSize})),
+                        trailing: p != null
+                            ? null
+                            : installed
+                                ? IconButton(
+                                    icon: const Icon(Icons.delete_outline),
+                                    onPressed: () async {
+                                      if (!await confirm(context, context.tr('gemmaDeleteQ'))) return;
+                                      await ai.deleteModel();
+                                    },
+                                  )
+                                : FilledButton.tonal(
+                                    onPressed: () async {
+                                      if (!await confirm(context, context.tr('gemmaDownloadQ', {'size': Ai.modelSize}), body: context.tr('gemmaDownloadBody'))) return;
+                                      try {
+                                        await ai.download();
+                                      } catch (e) {
+                                        if (context.mounted) toast(context, '${context.tr('failed')}: $e');
+                                      }
+                                    },
+                                    child: Text(context.tr('download')),
+                                  ),
+                      ),
+                      if (p != null) LinearProgressIndicator(value: p / 100),
+                    ]);
+                  },
+                ),
+              const Divider(height: 1),
+              ListTile(
+                leading: const Icon(Icons.vpn_key_outlined),
+                title: Text(context.tr('geminiKey')),
+                subtitle: Text(key.isEmpty ? context.tr('geminiKeySub') : '••••${key.length > 4 ? key.substring(key.length - 4) : ''}'),
+                onTap: () async {
+                  final v = await promptText(context, context.tr('geminiKey'), initial: key, hint: 'AIza…');
+                  if (v != null) await app.setString('geminiKey', v.trim());
+                },
+              ),
+              if (key.isNotEmpty) ...[
+                SwitchListTile(
+                  secondary: const Icon(Icons.photo_camera_outlined),
+                  title: Text(context.tr('geminiForPhotos')),
+                  subtitle: Text(context.tr('geminiPrivacy')),
+                  value: app.getBool('geminiForPhotos', true),
+                  onChanged: (v) => app.setBool('geminiForPhotos', v),
+                ),
+                ListTile(
+                  leading: const Icon(Icons.tune),
+                  title: Text(context.tr('geminiModel')),
+                  subtitle: Text(app.getString('geminiModel', 'gemini-flash-latest')),
+                  onTap: () async {
+                    final v = await promptText(context, context.tr('geminiModel'), initial: app.getString('geminiModel', 'gemini-flash-latest'));
+                    if (v != null && v.trim().isNotEmpty) await app.setString('geminiModel', v.trim());
+                  },
+                ),
+              ],
+              ListTile(
+                leading: const Icon(Icons.help_outline),
+                title: Text(context.tr('geminiHowTo')),
+                subtitle: const Text('aistudio.google.com/apikey'),
+              ),
+            ]),
+          ),
+        ]);
+      }),
+    );
   }
 }
