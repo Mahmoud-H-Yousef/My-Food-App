@@ -131,7 +131,7 @@ class SettingsPage extends StatelessWidget {
   }
 }
 
-const appVersion = '3.0';
+const appVersion = '4.0';
 
 /// Sections added in later versions.
 List<Widget> extraSettingsSections(BuildContext context) => const [HealthSection(), AiSection(), BackupSection()];

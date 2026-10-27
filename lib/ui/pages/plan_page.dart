@@ -162,7 +162,7 @@ class _WeekPlanState extends State<_WeekPlan> {
     await Repo.clearShopping(onlyGenerated: true);
     for (final k in totals.keys) {
       final g = totals[k]!;
-      await Repo.addShopping(names[k]!, g >= 1000 ? '${(g / 1000).toStringAsFixed(1)} kg' : '${(g / 10).ceil() * 10} g', manual: false);
+      await Repo.addShopping(names[k]!, g >= 1000 ? '${(g / 1000).toStringAsFixed(1)} kg' : '${(g / 10).ceil() * 10} ${context.tr('g')}', manual: false);
     }
     widget.onShoppingMade();
   }
@@ -241,7 +241,7 @@ class _WeekPlanState extends State<_WeekPlan> {
               dense: true,
               leading: Icon(mealIcon(context, m), size: 18),
               title: Text(it.name, maxLines: 1, overflow: TextOverflow.ellipsis),
-              subtitle: Text(it.unit == 'g' ? '${fmtNum(it.grams)} g' : '${fmtNum(it.qty)} × ${it.unit}', style: tt.bodySmall),
+              subtitle: Text(it.unit == 'g' ? '${fmtNum(it.grams)} ${context.tr('g')}' : '${fmtNum(it.qty)} × ${it.unit}', style: tt.bodySmall),
               trailing: Text('${it.kcal.round()}'),
               onTap: () => _itemMenu(it),
             ),

@@ -197,8 +197,8 @@ class _MealCard extends StatelessWidget {
 
 String entryAmount(BuildContext context, LogEntry e) {
   if (e.unit.isEmpty) return context.tr('quickAdd');
-  if (e.unit == 'g') return '${fmtNum(e.grams)} g';
-  return '${fmtNum(e.qty)} × ${e.unit} (${fmtNum(e.grams)} g)';
+  if (e.unit == 'g') return '${fmtNum(e.grams)} ${context.tr('g')}';
+  return '${fmtNum(e.qty)} × ${e.unit} (${fmtNum(e.grams)} ${context.tr('g')})';
 }
 
 /// Change amount or meal of a logged item.

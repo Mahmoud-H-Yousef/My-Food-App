@@ -203,7 +203,7 @@ class _FoodSearchPageState extends State<FoodSearchPage> with SingleTickerProvid
         final f = foods[i];
         final portion = f.portions.isNotEmpty ? f.portions.first : null;
         final sub = portion == null
-            ? '${fmtNum(f.kcal)} ${context.tr('kcal')} · 100 g'
+            ? '${fmtNum(f.kcal)} ${context.tr('kcal')} · 100 ${context.tr('g')}'
             : '${fmtNum(f.kcal * portion.grams / 100)} ${context.tr('kcal')} · ${portion.label(l)}';
         return ListTile(
           leading: CircleAvatar(
@@ -259,11 +259,11 @@ Future<LogEntry?> showQuickAddDialog(BuildContext context, {required int meal, r
           TextField(controller: kcal, autofocus: true, keyboardType: TextInputType.number, decoration: InputDecoration(labelText: context.tr('kcal'))),
           const SizedBox(height: 8),
           Row(children: [
-            Expanded(child: TextField(controller: p, keyboardType: TextInputType.number, decoration: InputDecoration(labelText: '${context.tr('protein')} g'))),
+            Expanded(child: TextField(controller: p, keyboardType: TextInputType.number, decoration: InputDecoration(labelText: '${context.tr('protein')} ${context.tr('g')}'))),
             const SizedBox(width: 6),
-            Expanded(child: TextField(controller: c, keyboardType: TextInputType.number, decoration: InputDecoration(labelText: '${context.tr('carbs')} g'))),
+            Expanded(child: TextField(controller: c, keyboardType: TextInputType.number, decoration: InputDecoration(labelText: '${context.tr('carbs')} ${context.tr('g')}'))),
             const SizedBox(width: 6),
-            Expanded(child: TextField(controller: f, keyboardType: TextInputType.number, decoration: InputDecoration(labelText: '${context.tr('fat')} g'))),
+            Expanded(child: TextField(controller: f, keyboardType: TextInputType.number, decoration: InputDecoration(labelText: '${context.tr('fat')} ${context.tr('g')}'))),
           ]),
         ]),
       ),

@@ -2,6 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+import '../../l10n/strings.dart';
+
 /// Circular progress ring with content in the middle.
 class Ring extends StatelessWidget {
   final double value; // 0..1+, over 1 draws in the error color
@@ -72,7 +74,7 @@ class MacroBar extends StatelessWidget {
         ),
       ),
       const SizedBox(height: 4),
-      Text('${value.round()} / ${target.round()} $unit', style: t.bodySmall),
+      Text('${value.round()} / ${target.round()} ${unit == 'g' ? context.tr('g') : unit}', style: t.bodySmall),
     ]);
   }
 }

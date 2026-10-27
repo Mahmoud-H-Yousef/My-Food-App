@@ -156,7 +156,7 @@ class _AmountSheetState extends State<_AmountSheet> {
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 Text(f.name(l), style: t.titleLarge),
                 if (f.brand.isNotEmpty) Text(f.brand, style: t.bodySmall),
-                Text('${fmtNum(f.kcal)} ${context.tr('kcal')} / 100 g', style: t.bodySmall),
+                Text('${fmtNum(f.kcal)} ${context.tr('kcal')} / 100 ${context.tr('g')}', style: t.bodySmall),
               ]),
             ),
             if (f.id != null)
@@ -170,42 +170,42 @@ class _AmountSheetState extends State<_AmountSheet> {
               ),
           ]),
           const SizedBox(height: 16),
-          Row(children: [
+          DropdownButtonFormField<Portion>(
+            key: ValueKey('${_portions.length}-${_portions.indexOf(_portion)}'),
+            initialValue: _portion,
+            isExpanded: true,
+            decoration: InputDecoration(labelText: context.tr('unit')),
+            items: [
+              for (final p in _portions)
+                DropdownMenuItem(
+                  value: p,
+                  child: Text(p.grams == 1 ? p.label(l) : '${p.label(l)} (${fmtNum(p.grams)} ${context.tr('g')})', overflow: TextOverflow.ellipsis),
+                ),
+            ],
+            onChanged: (p) {
+              if (p == null) return;
+              final wasGrams = _portion.grams == 1;
+              setState(() => _portion = p);
+              if (p.grams == 1 && !wasGrams) _setQty(100);
+              if (p.grams != 1 && wasGrams) _setQty(1);
+            },
+          ),
+          const SizedBox(height: 12),
+          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
             IconButton.filledTonal(onPressed: () => _setQty(_qty - step), icon: const Icon(Icons.remove)),
-            const SizedBox(width: 8),
+            const SizedBox(width: 12),
             SizedBox(
-              width: 80,
+              width: 110,
               child: TextField(
                 controller: _qtyCtl,
                 textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.titleLarge,
                 keyboardType: const TextInputType.numberWithOptions(decimal: true),
                 onChanged: (s) => setState(() => _qty = parseNum(s) ?? 0),
               ),
             ),
-            const SizedBox(width: 8),
-            IconButton.filledTonal(onPressed: () => _setQty(_qty + step), icon: const Icon(Icons.add)),
             const SizedBox(width: 12),
-            Expanded(
-              child: DropdownButtonFormField<Portion>(
-                key: ValueKey('${_portions.length}-${_portions.indexOf(_portion)}'),
-                initialValue: _portion,
-                isExpanded: true,
-                items: [
-                  for (final p in _portions)
-                    DropdownMenuItem(
-                      value: p,
-                      child: Text(p.grams == 1 ? p.label(l) : '${p.label(l)} (${fmtNum(p.grams)} g)', overflow: TextOverflow.ellipsis),
-                    ),
-                ],
-                onChanged: (p) {
-                  if (p == null) return;
-                  final wasGrams = _portion.grams == 1;
-                  setState(() => _portion = p);
-                  if (p.grams == 1 && !wasGrams) _setQty(100);
-                  if (p.grams != 1 && wasGrams) _setQty(1);
-                },
-              ),
-            ),
+            IconButton.filledTonal(onPressed: () => _setQty(_qty + step), icon: const Icon(Icons.add)),
           ]),
           if (_portions.any((p) => p.id == -2))
             Align(
@@ -220,15 +220,15 @@ class _AmountSheetState extends State<_AmountSheet> {
               padding: const EdgeInsets.all(14),
               child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
                 _stat(context, fmtNum(n.kcal), context.tr('kcal'), Theme.of(context).colorScheme.primary),
-                _stat(context, '${fmtNum(n.p)}g', context.tr('protein'), proteinColor),
-                _stat(context, '${fmtNum(n.c)}g', context.tr('carbs'), carbsColor),
-                _stat(context, '${fmtNum(n.f)}g', context.tr('fat'), fatColor),
+                _stat(context, '${fmtNum(n.p)} ${context.tr('g')}', context.tr('protein'), proteinColor),
+                _stat(context, '${fmtNum(n.c)} ${context.tr('g')}', context.tr('carbs'), carbsColor),
+                _stat(context, '${fmtNum(n.f)} ${context.tr('g')}', context.tr('fat'), fatColor),
               ]),
             ),
           ),
           Padding(
             padding: const EdgeInsets.only(top: 6),
-            child: Text('= ${fmtNum(_grams)} g', style: t.bodySmall, textAlign: TextAlign.end),
+            child: Text('= ${fmtNum(_grams)} ${context.tr('g')}', style: t.bodySmall, textAlign: TextAlign.end),
           ),
           if (widget.showMeal) ...[
             const SizedBox(height: 8),

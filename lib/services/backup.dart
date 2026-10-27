@@ -122,7 +122,18 @@ class DriveBackup {
     if (_access != null && _expiry != null && DateTime.now().isBefore(_expiry!.subtract(const Duration(minutes: 2)))) return _access!;
     final refresh = await _store.read(key: 'gdrive_refresh');
     if (refresh == null) throw StateError('Sign in to Google again.');
-    final r = await _appAuth.token(TokenRequest(clientId, _redirect, refreshToken: refresh, serviceConfiguration: _service, scopes: _scopes));
+    final TokenResponse r;
+    try {
+      r = await _appAuth.token(TokenRequest(clientId, _redirect, refreshToken: refresh, serviceConfiguration: _service, scopes: _scopes));
+    } on FlutterAppAuthPlatformException catch (e) {
+      // Expired or revoked (Google projects in "Testing" expire sign-ins after 7 days):
+      // forget it so the settings show "Back up to Google Drive" again.
+      if ('${e.platformErrorDetails.error} ${e.message}'.contains('invalid_grant')) {
+        await signOut();
+        throw StateError('Your Google sign-in expired. Sign in again in Me → Backup.');
+      }
+      rethrow;
+    }
     _access = r.accessToken;
     _expiry = r.accessTokenExpirationDateTime ?? DateTime.now().add(const Duration(minutes: 50));
     if (r.refreshToken != null) await _store.write(key: 'gdrive_refresh', value: r.refreshToken);

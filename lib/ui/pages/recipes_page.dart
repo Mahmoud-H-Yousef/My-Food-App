@@ -78,7 +78,7 @@ class _RecipesPageState extends State<RecipesPage> {
                           title: Text(r.name, style: const TextStyle(fontWeight: FontWeight.w600)),
                           subtitle: Text(
                             '${fmtNum(per.kcal)} ${context.tr('kcal')} / 100 g\n'
-                            '${fmtNum(per.kcal * serving / 100)} ${context.tr('kcal')} / ${context.tr('serving')} (${fmtNum(serving)} g) · '
+                            '${fmtNum(per.kcal * serving / 100)} ${context.tr('kcal')} / ${context.tr('serving')} (${fmtNum(serving)} ${context.tr('g')}) · '
                             '${context.tr('nIngredients', {'n': '${r.ingredients.length}'})}',
                           ),
                           isThreeLine: true,

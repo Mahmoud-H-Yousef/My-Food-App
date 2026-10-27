@@ -171,7 +171,7 @@ class _FoodEditorPageState extends State<FoodEditorPage> {
           ListTile(
             contentPadding: EdgeInsets.zero,
             title: Text(p.label(lang(context))),
-            subtitle: Text('${fmtNum(p.grams)} g'),
+            subtitle: Text('${fmtNum(p.grams)} ${context.tr('g')}'),
             trailing: IconButton(icon: const Icon(Icons.close), onPressed: () => setState(() => _portions.remove(p))),
           ),
         const SizedBox(height: 24),

@@ -233,7 +233,7 @@ class _AiReviewPageState extends State<AiReviewPage> {
                 value: it.selected,
                 onChanged: (v) => setState(() => it.selected = v ?? false),
                 title: Text(it.match?.name(l) ?? it.name),
-                subtitle: Text('${fmtNum(it.grams)} g · ${it.nutrition.kcal.round()} ${context.tr('kcal')}'
+                subtitle: Text('${fmtNum(it.grams)} ${context.tr('g')} · ${it.nutrition.kcal.round()} ${context.tr('kcal')}'
                     '${it.match == null ? ' · ${context.tr('aiEstimate')}' : ''}'),
               ),
               Row(mainAxisAlignment: MainAxisAlignment.end, children: [

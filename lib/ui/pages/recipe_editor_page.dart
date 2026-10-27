@@ -178,8 +178,8 @@ class _RecipeEditorPageState extends State<RecipeEditorPage> {
             contentPadding: EdgeInsets.zero,
             title: Text(_ingredients[i].name, maxLines: 1, overflow: TextOverflow.ellipsis),
             subtitle: Text(_ingredients[i].unit == 'g'
-                ? '${fmtNum(_ingredients[i].grams)} g'
-                : '${fmtNum(_ingredients[i].qty)} × ${_ingredients[i].unit} (${fmtNum(_ingredients[i].grams)} g)'),
+                ? '${fmtNum(_ingredients[i].grams)} ${context.tr('g')}'
+                : '${fmtNum(_ingredients[i].qty)} × ${_ingredients[i].unit} (${fmtNum(_ingredients[i].grams)} ${context.tr('g')})'),
             trailing: Row(mainAxisSize: MainAxisSize.min, children: [
               Text('${_ingredients[i].n.kcal.round()} ${context.tr('kcal')}'),
               IconButton(icon: const Icon(Icons.close), onPressed: () => setState(() => _ingredients.removeAt(i))),
@@ -214,7 +214,7 @@ class _RecipeEditorPageState extends State<RecipeEditorPage> {
             contentPadding: EdgeInsets.zero,
             leading: const Icon(Icons.straighten),
             title: Text(u.label(lang(context))),
-            subtitle: Text('${fmtNum(u.grams)} g · ${fmtNum(per.kcal * u.grams / 100)} ${context.tr('kcal')}'),
+            subtitle: Text('${fmtNum(u.grams)} ${context.tr('g')} · ${fmtNum(per.kcal * u.grams / 100)} ${context.tr('kcal')}'),
             trailing: IconButton(icon: const Icon(Icons.close), onPressed: () => setState(() => _units.remove(u))),
           ),
         Align(
@@ -231,7 +231,7 @@ class _RecipeEditorPageState extends State<RecipeEditorPage> {
               Text(context.tr('result'), style: tt.titleMedium?.copyWith(color: cs.onPrimaryContainer)),
               const SizedBox(height: 8),
               _resultRow(context, '100 g', per.kcal, per),
-              if ((parseNum(_servings.text) ?? 0) > 0) _resultRow(context, '${context.tr('serving')} (${fmtNum(_servingGrams)} g)', per.kcal * _servingGrams / 100, per.scale(_servingGrams / 100)),
+              if ((parseNum(_servings.text) ?? 0) > 0) _resultRow(context, '${context.tr('serving')} (${fmtNum(_servingGrams)} ${context.tr('g')})', per.kcal * _servingGrams / 100, per.scale(_servingGrams / 100)),
               for (final u in _units) _resultRow(context, u.label(lang(context)), per.kcal * u.grams / 100, per.scale(u.grams / 100)),
               _resultRow(context, context.tr('wholePot'), total.kcal, total),
             ]),
