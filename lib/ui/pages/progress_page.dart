@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import '../../data/models.dart';
 import '../../data/repo.dart';
 import '../../l10n/strings.dart';
+import '../../services/health_sync.dart';
 import '../../state/app_state.dart';
 import '../common.dart';
 import '../theme.dart';
@@ -55,6 +56,7 @@ class _ProgressPageState extends State<ProgressPage> {
     if (v == null || v <= 0) return;
     final kg = app.imperial ? v * _kgPerLb : v;
     await Repo.setWeight(dayKey(DateTime.now()), kg);
+    HealthSync.instance.writeWeight(app, dayKey(DateTime.now()), kg);
     final p = app.profile;
     if (p != null) {
       p.weightKg = kg;

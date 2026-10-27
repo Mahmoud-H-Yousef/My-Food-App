@@ -29,6 +29,8 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+        // Google sign-in redirect: com.mahmoud.myfood:/oauth2redirect
+        manifestPlaceholders += mapOf("appAuthRedirectScheme" to "com.mahmoud.myfood")
     }
 
     signingConfigs {

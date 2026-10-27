@@ -6,6 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'data/db.dart';
 import 'l10n/strings.dart';
 import 'logic/profile.dart';
+import 'services/backup.dart';
 import 'state/app_state.dart';
 import 'ui/home_shell.dart';
 import 'ui/onboarding_page.dart';
@@ -68,8 +69,11 @@ class _StartGateState extends State<StartGate> {
     try {
       if (!await AppDb.isSeeded()) await AppDb.seed();
       if (!mounted) return;
-      await context.read<AppState>().reload();
+      final app = context.read<AppState>();
+      await app.reload();
       setState(() => _ready = true);
+      // Daily Google Drive backup, quietly in the background.
+      DriveBackup(app.prefs).autoBackupIfDue().catchError((Object e) => debugPrint('auto backup failed: $e'));
     } catch (e) {
       setState(() => _error = '$e');
     }

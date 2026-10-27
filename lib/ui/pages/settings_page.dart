@@ -6,6 +6,7 @@ import '../../logic/profile.dart';
 import '../../state/app_state.dart';
 import '../common.dart';
 import '../widgets/profile_form.dart';
+import 'settings_sections.dart';
 
 /// "Me" tab: profile, goals, preferences and data.
 class SettingsPage extends StatelessWidget {
@@ -123,10 +124,10 @@ class SettingsPage extends StatelessWidget {
   }
 }
 
-const appVersion = '1.0';
+const appVersion = '2.0';
 
-/// Sections added by later versions (sync, backup, AI, Ramadan).
-List<Widget> extraSettingsSections(BuildContext context) => const [];
+/// Sections added in later versions.
+List<Widget> extraSettingsSections(BuildContext context) => const [HealthSection(), BackupSection()];
 
 /// Edit body details and goal; recalculates targets.
 class ProfileEditPage extends StatefulWidget {

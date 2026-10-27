@@ -5,6 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../data/models.dart';
 import '../data/repo.dart';
 import '../logic/profile.dart';
+import '../services/health_sync.dart';
 
 String dayKey(DateTime d) => DateFormat('yyyy-MM-dd').format(d);
 DateTime parseDay(String s) => DateTime.parse(s);
@@ -102,26 +103,33 @@ class AppState extends ChangeNotifier {
     entries = await Repo.entries(dayStr);
     waterMl = await Repo.water(dayStr);
     notifyListeners();
+    HealthSync.instance.refreshActivity(this);
+  }
+
+  /// After the diary changes: reload and queue the Health Connect write.
+  Future<void> changed() async {
+    await reload();
+    HealthSync.instance.scheduleWrite(this);
   }
 
   Future<void> addEntry(LogEntry e) async {
     await Repo.addEntry(e);
-    await reload();
+    await changed();
   }
 
   Future<void> updateEntry(LogEntry e) async {
     await Repo.updateEntry(e);
-    await reload();
+    await changed();
   }
 
   Future<void> deleteEntry(LogEntry e) async {
     await Repo.deleteEntry(e.id!);
-    await reload();
+    await changed();
   }
 
   Future<void> addWater(int ml) async {
     await Repo.setWater(dayStr, waterMl + ml);
-    await reload();
+    await changed();
   }
 
   void setActivity({int? burned, int? steps}) {

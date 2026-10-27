@@ -10,6 +10,7 @@ import '../../state/app_state.dart';
 import '../common.dart';
 import '../theme.dart';
 import 'amount_sheet.dart';
+import 'barcode_page.dart';
 import 'food_editor_page.dart';
 
 /// Search and pick a food. With [pickOnly] the page returns the [Picked]
@@ -93,6 +94,13 @@ class _FoodSearchPageState extends State<FoodSearchPage> with SingleTickerProvid
     if (mounted) Navigator.pop(context);
   }
 
+  Future<void> _scan() async {
+    final food = await Navigator.push<Food>(context, MaterialPageRoute(builder: (_) => const BarcodePage()));
+    if (food == null || !mounted) return;
+    await _loadLists();
+    if (mounted) _pick(food);
+  }
+
   Future<void> _createFood() async {
     final food = await Navigator.push<Food>(context, MaterialPageRoute(builder: (_) => FoodEditorPage(initialName: _q.text)));
     if (food == null || !mounted) return;
@@ -124,6 +132,7 @@ class _FoodSearchPageState extends State<FoodSearchPage> with SingleTickerProvid
                           _q.clear();
                           _onQuery('');
                         }),
+                  IconButton(icon: const Icon(Icons.qr_code_scanner), tooltip: context.tr('scanBarcode'), onPressed: _scan),
                 ],
                 elevation: const WidgetStatePropertyAll(0),
                 onChanged: (s) {

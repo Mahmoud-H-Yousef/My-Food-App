@@ -64,21 +64,21 @@ class TodayPage extends StatelessWidget {
     switch (v) {
       case 'copy':
         await Repo.copyDay(dayKey(app.day.subtract(const Duration(days: 1))), app.dayStr);
-        await app.reload();
+        await app.changed();
         if (context.mounted) toast(context, context.tr('copied'));
       case 'copyFrom':
         final d = await showDatePicker(
             context: context, initialDate: app.day.subtract(const Duration(days: 1)), firstDate: DateTime(2020), lastDate: DateTime(2100), helpText: context.tr('copyFromDay'));
         if (d == null) return;
         await Repo.copyDay(dayKey(d), app.dayStr);
-        await app.reload();
+        await app.changed();
         if (context.mounted) toast(context, context.tr('copied'));
       case 'clear':
         if (!context.mounted || !await confirm(context, context.tr('clearDayQ'))) return;
         for (final e in [...app.entries]) {
           await Repo.deleteEntry(e.id!);
         }
-        await app.reload();
+        await app.changed();
     }
   }
 }
